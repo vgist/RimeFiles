@@ -49,14 +49,3 @@ patch:
       url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
       punct: "^/([a-z]+|[0-9]0?)$"
       reverse_lookup: "`[a-z]*'?$"
-
-  reverse_lookup:
-    comment_format:
-      - "xform/([nl])v/$1ü/"
-    dictionary: stroke
-    enable_completion: true
-    preedit_format:
-      - "xlit/hspnz/一丨丿丶乙/"
-    prefix: "`"
-    suffix: "'"
-    tips: "〔筆畫〕"
