@@ -5,23 +5,21 @@ patch:
     fold_options: true
     hotkeys:
       - "Control+grave"          # control + `
-      - "Control+s"              # 添加 Ctrl+s
     save_options:
       - full_shape
       - ascii_punct
       - simplification
       - extended_charset
   menu:
-    page_size: 5                 # 候选词数量
+    page_size: 7                 # 候选词数量
+    #style/horizontal: true       # 候选窗水平显示
 
   schema_list:
     - schema: luna_pinyin_simp
 
-  ascii_composer:
-    switch_key:
-      Caps_Lock: noop
-      Control_L: noop
-      Control_R: noop
-      Eisu_toggle: clear
-      Shift_L: commit_code
-      Shift_R: commit_code
+  ascii_composer/switch_key/Shift_L: commit_code
+  ascii_composer/switch_key/Shift_R: clear
+
+#  key_binder/bindings:
+#    - {accept: "minus", send: Page_Up, when: has_menu}
+#    - {accept: "equal", send: Page_Down, when: has_menu}

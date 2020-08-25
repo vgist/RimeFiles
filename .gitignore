@@ -1,2 +1,6 @@
 .DS_Store
 .Spotlight-v100
+installation.yaml
+luna_pinyin.userdb
+user.yaml
+build/*
